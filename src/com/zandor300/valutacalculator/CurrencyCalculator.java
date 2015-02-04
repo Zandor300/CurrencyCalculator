@@ -9,9 +9,9 @@ public class CurrencyCalculator {
 
 	public static void main(String[] args) {
 		new Currency("Euro", "€", 1.0);
-		new Currency("Dollar", "$", 0.87);
-		new Currency("British pound", "£", 1.45);
-		new Currency("Japanese yen", "¥", 0.6);
+		new Currency("American Dollar", "$", 1.1441);
+		new Currency("British Pound", "£", 0.752994603);
+		new Currency("Japanese Yen", "¥", 134.315567);
 
 		//Set<java.util.Currency> currencies = java.util.Currency.getAvailableCurrencies();
 		//for(java.util.Currency currency : currencies)

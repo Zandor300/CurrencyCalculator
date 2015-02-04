@@ -13,6 +13,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 
 /**
@@ -88,7 +89,8 @@ public class ValueCalculator {
 			double value2w = value2waarde.getValue();
 			double value1c = Double.valueOf(value1.getText().replaceAll(" ", "").replaceAll(",", "."));
 			double value2c = Double.valueOf(value2.getText().replaceAll(" ", "").replaceAll(",", "."));
-			value2.setText(value1c / value1w * value2w + "");
+			double result = value1c / value1w * value2w;
+			value2.setText(BigDecimal.valueOf(result).setScale(2, BigDecimal.ROUND_HALF_UP) + "");
 		} catch (NumberFormatException e) {
 			System.out.println("Thats not a number!");
 		}
