@@ -14,14 +14,10 @@ import javafx.stage.Stage;
 /**
  * Created by Zandor on 4-2-2015.
  */
-public class OwnValueCalculator extends Application {
+public class OwnValueCalculator {
 
     public static void openWindow() {
-        launch("");
-    }
-
-    @Override
-    public void start(Stage stage) throws Exception {
+        Stage stage = new Stage();
         Group root = new Group();
         stage.setTitle("Own Currency Calculator");
         stage.setScene(new Scene(root, 400, 200));

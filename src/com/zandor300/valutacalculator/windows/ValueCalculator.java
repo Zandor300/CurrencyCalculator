@@ -20,14 +20,10 @@ import java.util.ArrayList;
 /**
  * Created by Zandor on 4-2-2015.
  */
-public class ValueCalculator extends Application {
+public class ValueCalculator {
 
     public static void openWindow() {
-        launch("");
-    }
-
-    @Override
-    public void start(Stage stage) throws Exception {
+        Stage stage = new Stage();
         Group root = new Group();
         stage.setTitle("Currency Calculator");
         stage.setScene(new Scene(root, 400, 200));
