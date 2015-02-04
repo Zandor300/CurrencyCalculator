@@ -21,6 +21,10 @@ public class Currency {
         allCurrencies.add(this);
     }
 
+    public static ArrayList<Currency> getAllCurrencies() {
+        return allCurrencies;
+    }
+
     public static Currency getCurrency(String name) {
         for(Currency currency : allCurrencies)
             if(currency.getName().equalsIgnoreCase(name))
