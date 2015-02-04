@@ -31,6 +31,7 @@ public class MainWindow extends Application {
 			@Override
 			public void handle(MouseEvent event) {
 				OwnValueCalculator.openWindow();
+				stage.close();
 			}
 		});
 		root.getChildren().add(own);
@@ -42,6 +43,7 @@ public class MainWindow extends Application {
 			@Override
 			public void handle(MouseEvent event) {
 				ValueCalculator.openWindow();
+				stage.close();
 			}
 		});
 		root.getChildren().add(original);

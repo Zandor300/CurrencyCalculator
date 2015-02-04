@@ -44,7 +44,7 @@ public class ValueCalculator {
 
 		ArrayList<String> currencies = new ArrayList<String>();
 		for (Currency currency : Currency.getAllCurrencies())
-			currencies.add(currency.getName());
+			currencies.add(currency.getCharacter() + " " + currency.getName());
 
 		final ChoiceBox<String> value1waarde = new ChoiceBox<String>(FXCollections.observableArrayList(currencies));
 		value1waarde.setLayoutX(60);
