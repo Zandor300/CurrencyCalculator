@@ -22,6 +22,7 @@ public class MainWindow extends Application {
 
     @Override
     public void start(final Stage stage) throws Exception {
+        System.out.println("Constructing main window...");
         Group root = new Group();
         stage.setTitle("Own Currency Calculator");
         stage.setScene(new Scene(root, 270, 45));
@@ -49,5 +50,6 @@ public class MainWindow extends Application {
         root.getChildren().add(original);
 
         stage.show();
+        System.out.println("Opened main window.");
     }
 }

@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 public class OwnValueCalculator {
 
     public static void openWindow() {
+        System.out.println("Constructing Own Value Calculator...");
         Stage stage = new Stage();
         Group root = new Group();
         stage.setTitle("Own Currency Calculator");
@@ -70,6 +71,7 @@ public class OwnValueCalculator {
         root.getChildren().add(calculate);
 
         stage.show();
+        System.out.println("Opened Own Value Calculator.");
     }
 
     private static void calculate(TextField value1waarde, TextField value2waarde, TextField value1, TextField value2) {

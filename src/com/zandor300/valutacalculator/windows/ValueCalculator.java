@@ -23,6 +23,7 @@ import java.util.ArrayList;
 public class ValueCalculator {
 
     public static void openWindow() {
+        System.out.println("Constructing Value Calculator...");
         Stage stage = new Stage();
         Group root = new Group();
         stage.setTitle("Currency Calculator");
@@ -80,6 +81,7 @@ public class ValueCalculator {
         root.getChildren().add(calculate);
 
         stage.show();
+        System.out.println("Opened Value Calculator.");
     }
 
     private static void calculate(Currency value1waarde, Currency value2waarde, TextField value1, TextField value2) {
