@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 /**
  * Created by Zandor on 3-2-2015.
  */
-public class ValutaCalculator extends Application {
+public class CurrencyCalculator extends Application {
 
     public static void main(String[] args) {
         launch(args);
@@ -23,7 +23,7 @@ public class ValutaCalculator extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Group root = new Group();
-        stage.setTitle("Valuta Calculator");
+        stage.setTitle("Currency Calculator");
         stage.setScene(new Scene(root, 400, 200));
 
         final Text valueT = new Text("Value:");
